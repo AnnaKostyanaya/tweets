@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/tweets/static/css/main.12093e7c.css",
+    "main.js": "/tweets/static/js/main.c1e45721.js",
+    "static/js/390.b6e6fb68.chunk.js": "/tweets/static/js/390.b6e6fb68.chunk.js",
+    "static/js/655.406d44f8.chunk.js": "/tweets/static/js/655.406d44f8.chunk.js",
+    "static/js/771.9a2beb91.chunk.js": "/tweets/static/js/771.9a2beb91.chunk.js",
+    "static/js/787.72376a18.chunk.js": "/tweets/static/js/787.72376a18.chunk.js",
+    "static/media/Fon4x.png": "/tweets/static/media/Fon4x.c991a9c77c43ed434486.png",
+    "static/media/Fon3x.png": "/tweets/static/media/Fon3x.760813c1ad4d4fa5991c.png",
+    "static/media/Fon2x.png": "/tweets/static/media/Fon2x.ecde5c9dfbe42e4d5b8e.png",
+    "static/media/Fon1x.png": "/tweets/static/media/Fon1x.032662a2a907475127d7.png",
+    "static/media/montserrat-latin-400-normal.woff": "/tweets/static/media/montserrat-latin-400-normal.0f1794a79a689a577c2a.woff",
+    "static/media/montserrat-latin-ext-400-normal.woff": "/tweets/static/media/montserrat-latin-ext-400-normal.688aee1c9dd2450dd804.woff",
+    "static/media/montserrat-latin-400-normal.woff2": "/tweets/static/media/montserrat-latin-400-normal.acb6629fe45c43ad5d8b.woff2",
+    "static/media/montserrat-cyrillic-ext-400-normal.woff": "/tweets/static/media/montserrat-cyrillic-ext-400-normal.4ae7c395ed6c62e4293a.woff",
+    "static/media/montserrat-cyrillic-400-normal.woff": "/tweets/static/media/montserrat-cyrillic-400-normal.be1d5ffb1cc104d1437d.woff",
+    "static/media/montserrat-latin-ext-400-normal.woff2": "/tweets/static/media/montserrat-latin-ext-400-normal.0204ec08a4b574088f02.woff2",
+    "static/media/montserrat-cyrillic-ext-400-normal.woff2": "/tweets/static/media/montserrat-cyrillic-ext-400-normal.bbf9e820a2563aac0d8b.woff2",
+    "static/media/montserrat-cyrillic-400-normal.woff2": "/tweets/static/media/montserrat-cyrillic-400-normal.e5c5c19c23e370a342c8.woff2",
+    "static/media/montserrat-vietnamese-400-normal.woff": "/tweets/static/media/montserrat-vietnamese-400-normal.f36d8e9e08c584303451.woff",
+    "static/media/montserrat-vietnamese-400-normal.woff2": "/tweets/static/media/montserrat-vietnamese-400-normal.8f3f4c99eb0eeb5990f1.woff2",
+    "index.html": "/tweets/index.html",
+    "main.12093e7c.css.map": "/tweets/static/css/main.12093e7c.css.map",
+    "main.c1e45721.js.map": "/tweets/static/js/main.c1e45721.js.map",
+    "390.b6e6fb68.chunk.js.map": "/tweets/static/js/390.b6e6fb68.chunk.js.map",
+    "655.406d44f8.chunk.js.map": "/tweets/static/js/655.406d44f8.chunk.js.map",
+    "771.9a2beb91.chunk.js.map": "/tweets/static/js/771.9a2beb91.chunk.js.map",
+    "787.72376a18.chunk.js.map": "/tweets/static/js/787.72376a18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12093e7c.css",
+    "static/js/main.c1e45721.js"
+  ]
+}
