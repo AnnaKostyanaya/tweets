@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/tweets/static/css/main.12093e7c.css",
-    "main.js": "/tweets/static/js/main.c1e45721.js",
-    "static/js/390.b6e6fb68.chunk.js": "/tweets/static/js/390.b6e6fb68.chunk.js",
-    "static/js/655.406d44f8.chunk.js": "/tweets/static/js/655.406d44f8.chunk.js",
-    "static/js/771.9a2beb91.chunk.js": "/tweets/static/js/771.9a2beb91.chunk.js",
+    "main.js": "/tweets/static/js/main.3d0e47b5.js",
+    "static/js/390.af937ef1.chunk.js": "/tweets/static/js/390.af937ef1.chunk.js",
+    "static/js/683.94489806.chunk.js": "/tweets/static/js/683.94489806.chunk.js",
+    "static/js/513.37cb0adc.chunk.js": "/tweets/static/js/513.37cb0adc.chunk.js",
     "static/js/787.72376a18.chunk.js": "/tweets/static/js/787.72376a18.chunk.js",
     "static/media/Fon4x.png": "/tweets/static/media/Fon4x.c991a9c77c43ed434486.png",
     "static/media/Fon3x.png": "/tweets/static/media/Fon3x.760813c1ad4d4fa5991c.png",
@@ -22,14 +22,14 @@
     "static/media/montserrat-vietnamese-400-normal.woff2": "/tweets/static/media/montserrat-vietnamese-400-normal.8f3f4c99eb0eeb5990f1.woff2",
     "index.html": "/tweets/index.html",
     "main.12093e7c.css.map": "/tweets/static/css/main.12093e7c.css.map",
-    "main.c1e45721.js.map": "/tweets/static/js/main.c1e45721.js.map",
-    "390.b6e6fb68.chunk.js.map": "/tweets/static/js/390.b6e6fb68.chunk.js.map",
-    "655.406d44f8.chunk.js.map": "/tweets/static/js/655.406d44f8.chunk.js.map",
-    "771.9a2beb91.chunk.js.map": "/tweets/static/js/771.9a2beb91.chunk.js.map",
+    "main.3d0e47b5.js.map": "/tweets/static/js/main.3d0e47b5.js.map",
+    "390.af937ef1.chunk.js.map": "/tweets/static/js/390.af937ef1.chunk.js.map",
+    "683.94489806.chunk.js.map": "/tweets/static/js/683.94489806.chunk.js.map",
+    "513.37cb0adc.chunk.js.map": "/tweets/static/js/513.37cb0adc.chunk.js.map",
     "787.72376a18.chunk.js.map": "/tweets/static/js/787.72376a18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12093e7c.css",
-    "static/js/main.c1e45721.js"
+    "static/js/main.3d0e47b5.js"
   ]
 }
