@@ -12,6 +12,12 @@ const Btn = styled.button`
     line-height: 21.94px;
     text-transform: uppercase;
     background-color: ${({ text }) => (text === "Following" ? '#5CD3A8' : '#EBD8FF')};
+    transition: background-color 0.3s ${({ theme }) => theme.transition};
+
+    &:hover,
+    &:focus {
+        background-color: ${({ text }) => (text === "Following" ? '#47A885' : '#DDB3FF')};
+    }
 `
 
 

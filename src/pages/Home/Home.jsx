@@ -6,7 +6,8 @@ import { currentFilter } from "redux/filter/filter-selectors";
 import { Link, useLocation } from "react-router-dom";
 import Button from "components/Button"
 import Dropdown from "components/Dropdown"
-import { Image, ContentWrapper, MainContainer } from './Home.styled';
+import { Image, ContentWrapper, Picture, List, Items, DropdownContainer, PictureContainer, Avatar, Card, TextName, TextContainer, TextTweet, TextFollowers } from './Home.styled';
+import { Error, Btn} from '../User/User.styled';
 
 const Home = () => {
 
@@ -59,30 +60,36 @@ const Home = () => {
 
     return (
     <ContentWrapper>
-        <Image alt="Logo" />
-        <MainContainer>
-            {filterUsers && 
-            <>
+        <PictureContainer>
+            <Image alt="Logo" />
+            <Picture></Picture>
+            {filterUsers &&
+            <DropdownContainer>
                 <Dropdown />
-                <ul>
-                {filterUsers.slice(0, lastUser).map(({id, avatar, tweets, followers, user}) => (
-                    <li key={id}>
+            </DropdownContainer>}
+        </PictureContainer>
+            {filterUsers && <List>
+            {filterUsers.slice(0, lastUser).map(({id, avatar, tweets, followers, user}) => (
+                <Card key={id}>
+                    <Items>
                         <Link to={`tweets/${id}`} state={{ from: location }}>
-                            <img src={avatar} alt="avatar" />
-                            <p>{user}</p>
-                            <p>{tweets.toLocaleString('en-US')}<span>tweets</span></p>
-                            <p>{followers.toLocaleString('en-US')}<span>followers</span></p>
+                            <Avatar src={avatar} alt="avatar" />
+                            <TextContainer>
+                                <TextName>{user}</TextName>
+                                <TextTweet >{tweets.toLocaleString('en-US')}<span> tweets</span></TextTweet>
+                                <TextFollowers>{followers.toLocaleString('en-US')}<span> followers</span></TextFollowers>
+                            </TextContainer>
                         </Link>
-                    </li>
-                    ))}
-                </ul>
-            </>}
-            {(filterUsers && filterUsers.length > 0 && pageNumber < pageTotal) &&
-            <Button text="Load more" type="button" onClick={handleIncrement} />}
-            {(filterUsers && pageNumber === pageTotal && filterUsers.length > 0) &&
-            <p>You've reached the end of search results.</p>}
-            {isLoading && !error && <p>Request in progress...</p>}
-        </MainContainer>
+                    </Items>
+                </Card>
+                ))}
+            </List>}
+        {(filterUsers && filterUsers.length > 0 && pageNumber < pageTotal) &&
+        <Btn><Button text="Load more" type="button" onClick={handleIncrement} /></Btn>}
+        {(filterUsers && pageNumber === pageTotal && filterUsers.length > 0) &&
+        <Error>You've reached the end of search results</Error>}
+        {isLoading && !error && <Error>Loading...</Error>}
+        {error && <Error>Error...{error.message}</Error>}
     </ContentWrapper>
     );
     };

@@ -10,6 +10,12 @@ import picture2x from '../../image/Fon2x.png';
 import picture3x from '../../image/Fon3x.png';
 import picture4x from '../../image/Fon4x.png';
 
+const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+`
 
 const ContentWrapper = styled.div`
     position: relative;
@@ -201,8 +207,21 @@ const Btn = styled.div`
     display: flex;
     justify-content: center;
 `
+const Error = styled.p`
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: ${({ theme }) => theme.fontSizes[0]};
+    color: ${({ theme }) => theme.colors.rose};
+    text-transform: uppercase; 
+`
+
+
 
 export {
+    Container,
     MainContainer,
     Image,
     ContentWrapper,
@@ -213,5 +232,6 @@ export {
     TextFollowers,
     TextTweet,
     TextContainer,
-    Btn
+    Btn,
+    Error,
     };

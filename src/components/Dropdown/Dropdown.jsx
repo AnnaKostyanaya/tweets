@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { setFilter } from "redux/filter/filter-slice";
 import { currentFilter } from "redux/filter/filter-selectors";
 import { useDispatch, useSelector } from "react-redux";
+import { Btn, Drop, Menu, Item } from './Dropdown.styled';
 
 
 const Dropdown = () => {
@@ -20,18 +21,18 @@ const Dropdown = () => {
     };
 
     return (
-        <div className="dropdown">
-        <button className="dropdown-toggle" onClick={toggleDropdown}>
+        <Drop>
+        <Btn onClick={toggleDropdown} text={selectedOption || 'Filter'}>
             {selectedOption || "Filter"}
-        </button>
+        </Btn>
         {isOpen && (
-            <ul className="dropdown-menu">
-            <li onClick={() => handleOptionSelect("Show all")}>Show all</li>
-            <li onClick={() => handleOptionSelect("Follow")}>Follow</li>
-            <li onClick={() => handleOptionSelect("Followings")}>Followings</li>
-            </ul>
+            <Menu>
+            <Item onClick={() => handleOptionSelect("Show all")}>Show all</Item>
+            <Item onClick={() => handleOptionSelect("Follow")}>Follow</Item>
+            <Item onClick={() => handleOptionSelect("Followings")}>Followings</Item>
+            </Menu>
         )}
-        </div>
+        </Drop>
     );
 };
 

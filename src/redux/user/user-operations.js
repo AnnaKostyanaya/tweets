@@ -31,7 +31,6 @@ export const changeFollowerCount = createAsyncThunk(
     "users/changeFollower",
     async (current, thunkAPI) => {
     try {
-        console.log(current);
     const response = await axios.put(`users/${current.id}`, current);
         return response.data;
     } catch (error) {

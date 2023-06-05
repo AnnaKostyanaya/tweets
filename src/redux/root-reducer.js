@@ -13,14 +13,6 @@ const usersPersistConfig = {
 };
 const persistUsersReducer = persistReducer(usersPersistConfig, usersReducer);
 
-// const filterPersistConfig = {
-//     key: 'filter',
-//     storage,
-//     whitelist: ['filter']
-// };
-// const persistFilterReducer = persistReducer(filterPersistConfig, filterReducer);
-
-
 const rootReducer = combineReducers({
     users: persistUsersReducer,
     filter: filterReducer,

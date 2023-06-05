@@ -6,7 +6,7 @@ import { fetchUsersById, changeFollowerCount } from "redux/user/user-operations"
 import { currentUser, getError, getIsLoading, currentStatus } from "redux/user/user-selectors";
 import { toggleUserSubscription } from "redux/user/user-slice";
 import Button from "components/Button/Button";
-import { Image, ContentWrapper, MainContainer, AvatarContainer, Avatar, LinkToBack, Line, TextTweet, TextFollowers, TextContainer, Btn } from './User.styled';
+import { Container, Image, ContentWrapper, MainContainer, AvatarContainer, Avatar, LinkToBack, Line, TextTweet, TextFollowers, TextContainer, Btn, Error } from './User.styled';
 
 const User = () => {
     const current = useSelector(currentUser);
@@ -39,6 +39,7 @@ const User = () => {
     const buttonText = isUserSubscribed ? 'Following' : 'Follow'
 
     return (
+        <Container>
         <ContentWrapper> 
             <Image alt="Logo" />
             <MainContainer>
@@ -57,10 +58,11 @@ const User = () => {
                         <Button type="button" text={buttonText} onClick={onClick} />    
                     </Btn>
                 </>)}
-                {isLoading && (<div>Loading...</div>)}
-                {error && (<div>Error: {error.message}</div>)}
+                {isLoading && (<Error>Loading...</Error>)}
+                {error && (<Error>Error...{error.message}</Error>)}
             </MainContainer>
         </ContentWrapper>
+        </Container>
     )
 };
 
