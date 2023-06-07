@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tweets/static/css/main.12093e7c.css",
-    "main.js": "/tweets/static/js/main.3d0e47b5.js",
+    "main.js": "/tweets/static/js/main.f61e7039.js",
     "static/js/390.af937ef1.chunk.js": "/tweets/static/js/390.af937ef1.chunk.js",
     "static/js/683.94489806.chunk.js": "/tweets/static/js/683.94489806.chunk.js",
     "static/js/513.37cb0adc.chunk.js": "/tweets/static/js/513.37cb0adc.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/montserrat-vietnamese-400-normal.woff2": "/tweets/static/media/montserrat-vietnamese-400-normal.8f3f4c99eb0eeb5990f1.woff2",
     "index.html": "/tweets/index.html",
     "main.12093e7c.css.map": "/tweets/static/css/main.12093e7c.css.map",
-    "main.3d0e47b5.js.map": "/tweets/static/js/main.3d0e47b5.js.map",
+    "main.f61e7039.js.map": "/tweets/static/js/main.f61e7039.js.map",
     "390.af937ef1.chunk.js.map": "/tweets/static/js/390.af937ef1.chunk.js.map",
     "683.94489806.chunk.js.map": "/tweets/static/js/683.94489806.chunk.js.map",
     "513.37cb0adc.chunk.js.map": "/tweets/static/js/513.37cb0adc.chunk.js.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.12093e7c.css",
-    "static/js/main.3d0e47b5.js"
+    "static/js/main.f61e7039.js"
   ]
 }
