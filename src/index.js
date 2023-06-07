@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 import { store, persistor} from './redux/store';
-import { BrowserRouter } from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
 
@@ -15,12 +16,13 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter 
+        <HashRouter
+          // BrowserRouter 
         basename="/tweets">
           <ThemeProvider theme={theme}>
             <App />
           </ThemeProvider>
-        </BrowserRouter>
+        </HashRouter>
       </PersistGate>
     </Provider>
   </React.StrictMode>
