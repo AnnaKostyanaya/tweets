@@ -18,7 +18,8 @@ root.render(
       <PersistGate loading={null} persistor={persistor}>
         <HashRouter
           // BrowserRouter 
-        basename="/tweets">
+        // basename="/tweets"
+        >
           <ThemeProvider theme={theme}>
             <App />
           </ThemeProvider>
